@@ -1,0 +1,44 @@
+/* Styles for the container */
+#search-container {
+    display: flex; /* Use flex display */
+    gap: 1rem; /* Space between input bars */
+  }
+  
+  /* Styles for the forms */
+  .search-form {
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Styles for the input container */
+  .input-container {
+    display: flex; /* Use flex display */
+    align-items: center; /* Align items in the center */
+    border: 1px solid rgb(90, 90, 90);
+    margin-left: 15rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 2px;
+    padding-left: 20px;
+
+  }
+  
+  /* Styles for the input fields */
+  .search-input {
+    height: 1.2rem; /* Set height to 2rem */
+    width: 15rem; /* Set width to 7rem */
+    padding: 0.5rem; /* Add padding */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Rounded corners */
+    
+  }
+  
+  /* Style the icons */
+  .input-icon {
+    
+    margin-right: 0.5rem; /* Add space between the icon and the input field */
+  }
+  #info-input,
+  #location-input{
+    border: none;
+    
+  }
