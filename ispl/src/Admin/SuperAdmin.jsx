@@ -71,7 +71,7 @@ const SuperAdmin = () => {
     try {
       const servicesString = formData.services_List.join(',');
       const dataToSend = { ...formData, services_List: servicesString };
-      const response = await fetch('http://192.168.1.58:8080/superadmin', {
+      const response = await fetch('http://localhost:8080/superadmin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

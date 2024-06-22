@@ -11,7 +11,7 @@ const DataDisplay = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://192.168.1.58:8081/admin');
+      const response = await fetch('http://localhost:8080/admin');
       const data = await response.json();
       setFormDataList(data);
     } catch (error) {
@@ -21,7 +21,7 @@ const DataDisplay = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://192.168.1.58:8081/admin/${id}`, {
+      await fetch(`http://localhost:8080/admin/${id}`, {
         method: 'DELETE',
       });
       setFormDataList(formDataList.filter(data => data.id !== id));
@@ -37,7 +37,7 @@ const DataDisplay = () => {
 
   const handleUpdate = async () => {
     try {
-      await fetch(`http://192.168.1.58:8081/admin/${editingId}`, {
+      await fetch(`http://localhost:8080/admin/${editingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

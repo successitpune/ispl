@@ -18,45 +18,39 @@ const DualSearchBar = () => {
   };
 
   return (
-   <center>
-    <div >
+    <center>
+      <div id="search-container" className="search-container">
+        {/* Location search bar */}
+        <form onSubmit={(e) => e.preventDefault()} id="location-form" className="search-form">
+          <div className="input-container">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="input-icon" />
+            <input
+              type="text"
+              id="location-input"
+              value={location}
+              onChange={handleLocationChange}
+              placeholder="Enter location"
+              className="search-input"
+            />
+          </div>
+        </form>
 
-    <div id="search-container" className="search-container">
-      {/* Location search bar */}
-      <form onSubmit={(e) => e.preventDefault()} id="location-form" className="search-form">
-        <div className="input-container">
-          <FontAwesomeIcon icon={faMapMarkerAlt} className="input-icon" />
-          <input
-            type="text"
-            id="location-input"
-            value={location}
-            onChange={handleLocationChange}
-            placeholder="Enter location"
-            className="search-input"
-          />
-        </div>
-      </form>
-
-      {/* Info search bar */}
-      <form onSubmit={(e) => e.preventDefault()} id="info-form" className="search-form">
-        <div className="input-container">
-          <FontAwesomeIcon icon={faSearch} className="input-icon" />
-          <input
-            type="text"
-            id="info-input"
-            value={infoSearch}
-            onChange={handleInfoSearchChange}
-            placeholder="Search for information"
-            className="search-input"
-          />
-        </div>
-      </form>
-    </div>
-    </div>
-  
-
-
-   </center>
+        {/* Info search bar */}
+        <form onSubmit={(e) => e.preventDefault()} id="info-form" className="search-form">
+          <div className="input-container">
+            <FontAwesomeIcon icon={faSearch} className="input-icon" />
+            <input
+              type="text"
+              id="info-input"
+              value={infoSearch}
+              onChange={handleInfoSearchChange}
+              placeholder="Search for information"
+              className="search-input"
+            />
+          </div>
+        </form>
+      </div>
+    </center>
   );
 };
 

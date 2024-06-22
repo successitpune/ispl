@@ -51,7 +51,7 @@ const Admin = () => {
         email_Id: formData.email_Id
       };
       // Make POST request to the server
-      const response = await fetch('http://192.168.1.58:8081/admin', {
+      const response = await fetch('http://localhost:8080/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -52,7 +52,7 @@ export default function Card() {
       Sony/Intel/TATA
           </a>
           <p className="product-price">
-              from 900 RS/-
+               900 RS/-
             <span className="price-tag">Lowest price</span>
           </p>
           <p className="product-stock">
@@ -112,7 +112,7 @@ export default function Card() {
             Any Company 
           </a>
           <p className="product-price">
-           from  1,900 RS/-
+             1,900 RS/-
             <span className="price-tag">Lowest price</span>
           </p>
           <p className="product-stock">

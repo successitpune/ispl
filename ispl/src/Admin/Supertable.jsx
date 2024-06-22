@@ -25,7 +25,7 @@ const Add = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://192.168.1.58:8080/superadmin');
+      const response = await fetch('http://localhost:8080/superadmin');
       const data = await response.json();
       setFormDataList(data);
     } catch (error) {
@@ -35,7 +35,7 @@ const Add = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://192.168.1.58:8080/superadmin/${id}`, {
+      await fetch(`http://localhost:8080/superadmin/${id}`, {
         method: 'DELETE',
       });
       setFormDataList(formDataList.filter(data => data.id !== id));
@@ -51,7 +51,7 @@ const Add = () => {
 
   const handleUpdate = async () => {
     try {
-      await fetch(`http://192.168.1.58:8080/superadmin/${editingId}`, {
+      await fetch(`http://localhost:8080/superadmin/${editingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

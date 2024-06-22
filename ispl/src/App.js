@@ -9,30 +9,31 @@ import DualSearchBar from './Searchbar/DualSearchBar';
 import Card from './Cards/Card';
 import Admin from './Admin/Admin';
 import SuperAdmin from './Admin/SuperAdmin';
+// import SuperLogin from './SuperLogin';
+import Protected from './Protected';
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path='/Admin' element={<Admin />} />
-        <Route path ='/Superadmin' element={<SuperAdmin/>}/>
-      
-        
-        <Route path='*' element={
+    <Routes>
+      <Route path="/Admin" element={<Admin/>} />
+      <Route path="/Superadmin" element={<SuperAdmin />} />
+      {/* // <Route path="/SuperLogin" element={<SuperLogin />} /> */}
+      <Route path="*"
+        element={
           <>
             <Newnavbar />
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/List' element={<List />} />
-              <Route path='/Login' element={<Login />} />
-              <Route path='/Signup' element={<Signup />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/List" element={<List />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path="/Signup" element={<Signup />} />
             </Routes>
             <DualSearchBar />
             <Card />
           </>
-        } />
-      </Routes>
-    </>
+        }
+      />
+    </Routes>
   );
 }
 
