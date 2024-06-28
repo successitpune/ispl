@@ -1,0 +1,92 @@
+/* login.css */
+
+/* Form container */
+form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; /* Center-align the content within the form */
+}
+
+/* Table container */
+.table-container {
+  display: inline-block; /* Ensures that the table is centered */
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  border: 2px solid #000; /* Black border around the table */
+}
+
+/* Table header styles */
+th {
+  background-color: #2196F3; /* Blue header background */
+  color: #fff; /* White text color */
+  text-align: left;
+  padding: 8px;
+}
+
+/* Table row styles */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Table cell styles */
+td {
+  padding: 8px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"], /* Add styling for email input */
+select,
+textarea {
+  width: calc(100% - 16px); /* Subtract padding from width to prevent overflow */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Add bottom margin for spacing between fields */
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Checkbox label styles */
+.checkbox-container label {
+  margin-right: 20px;
+}
+
+/* Profile photo input style */
+input[type="file"] {
+  margin-top: 10px; /* Add top margin for spacing */
+}
+
+/* Submit button styles */
+button[type="submit"] {
+  background-color: #4caf50; /* Green submit button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Centered heading */
+#admin {
+  text-align: center;
+  margin-top: 20px; /* Add top margin for spacing */
+}
